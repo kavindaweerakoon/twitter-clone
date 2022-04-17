@@ -12,11 +12,12 @@ import {
 import React from "react";
 import SidebarOption from "./SidebarOption";
 import { Button } from '@mui/material';
+import "./Sidebar.css";
 
 function Sidebar() {
   return (
     <div className="sidebar">
-      <Twitter />
+      <Twitter className="sidebar__twitterIcon" />
 
       <SidebarOption active title={"Home"} Icon={Home} />
       <SidebarOption title={"Explore"} Icon={Search} />
@@ -26,8 +27,8 @@ function Sidebar() {
       <SidebarOption title={"Lists"} Icon={ListAlt} />
       <SidebarOption title={"Profile"} Icon={PermIdentity} />
       <SidebarOption title={"More"} Icon={MoreHoriz} />
-
-      <Button variant="outlined" className="sidebar__tweet">Tweet</Button>
+    
+      <Button variant="outlined" className="sidebar__tweet" >Tweet</Button>
     </div>
   );
 }
