@@ -12,7 +12,7 @@
     background-color: #e8f5fe;
     border-radius: 30px;
     color: var(--twitter-color);
-    transition: color 100ms ease-out;
+    transition: color 150ms ease;
 }
 
 .sidebarOption h2 {
