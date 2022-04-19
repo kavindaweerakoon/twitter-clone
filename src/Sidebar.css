@@ -6,6 +6,10 @@
     padding: 0 20px;
 }
 
+.sidebar__tweet--mobile {
+    display: none !important;
+}
+
 .sidebar__twitterIcon {
     color: var(--twitter-color);
     font-size: 30px !important;
@@ -13,7 +17,8 @@
     margin-bottom: 20px;
 }
 
-.sidebar__tweet {
+.sidebar__tweet,
+.sidebar__tweet--mobile {
     background-color: var(--twitter-color) !important;
     border: none !important;
     color: white !important;
@@ -23,4 +28,28 @@
     border-radius: 30px !important;
     margin-top: 20px !important;
     width: 100% !important;
+}
+
+@media only screen and (max-width: 1320px) {
+    .sidebar {
+        flex: 0.064;
+        min-width: 64px;
+    }
+
+    .sidebar__tweet {
+        display: none !important;
+    }
+
+    .sidebar__tweet--mobile {
+        display: flex !important;
+        width: 50px !important; 
+        height: 60px !important;
+        
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .sidebar {
+        display: none;
+    }
 }

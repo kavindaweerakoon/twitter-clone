@@ -1,14 +1,20 @@
+.mobile {
+    display: none;
+}
+
 .sidebarOption {
     display: flex;
     align-items: center;
     cursor: pointer;
 }
 
-.sidebarOption .MuiSvgIcon-root {
+.sidebarOption .MuiSvgIcon-root,
+.mobile .MuiSvgIcon-root {
     padding: 20px;
 }
 
-.sidebarOption:hover {
+.sidebarOption:hover
+ {
     background-color: #e8f5fe;
     border-radius: 30px;
     color: var(--twitter-color);
@@ -23,4 +29,16 @@
 
 .sidebarOption--active {
     color : var(--twitter-color);
+}
+
+@media only screen and (max-width: 1320px) {
+  
+
+    .sidebarOption  {
+       display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
 }

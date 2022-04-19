@@ -13,6 +13,8 @@ import React from "react";
 import SidebarOption from "./SidebarOption";
 import { Button } from '@mui/material';
 import "./Sidebar.css";
+import CreateIcon from '@mui/icons-material/Create';
+
 
 function Sidebar() {
   return (
@@ -29,6 +31,11 @@ function Sidebar() {
       <SidebarOption title={"More"} Icon={MoreHoriz} />
     
       <Button variant="outlined" className="sidebar__tweet" >Tweet</Button>
+      <Button variant="outlined" className="sidebar__tweet--mobile" >
+        <CreateIcon />
+      </Button>
+
+     
     </div>
   );
 }

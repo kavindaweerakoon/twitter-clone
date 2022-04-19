@@ -22,3 +22,17 @@
     font-size: 20px;
     font-weight: 800;    
 }
+
+@media only screen and (max-width: 1320px) {
+    .feed {
+        flex: 0.625;
+    }
+
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .feed {
+        flex: 1;
+    }
+}
